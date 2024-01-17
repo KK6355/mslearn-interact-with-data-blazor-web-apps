@@ -1,10 +1,11 @@
 @page "/"
+
 @using BlazingPizza.Services
 @inject HttpClient HttpClient
 @inject NavigationManager NavigationManager
 @inject OrderState OrderState
 <div class="main">
-    <h1>Blazing Pizzas</h1>
+    
     <ul class="pizza-cards">
         @foreach(var special in specials)
         {
